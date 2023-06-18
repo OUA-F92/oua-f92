@@ -36,13 +36,13 @@ F92
 - **Daily Scrum**: Daily Scrum toplantılarını sesli ve görüntülü olarak Discord üzerinden yazılı olarak ise Whatsapp üzerinden gerçekleştirmeye karar verdik. Daily Scrum toplantılarından bazı örneklerin yer aldığı dosya: [Sprint 1 Daily Scrum Chats](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/DailyScrumMeetingNotesSprint1.docx)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1]([[[https://raw.githubusercontent.com/OyunveUygulamaAkademisi/Bootcamp2022Example/main/ProjectManagement/Sprint1Documents/backlog1.png](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/backlog1,.png?raw=true)https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/backlog1,.png?raw=true](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/backlog1%2C.png)](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/backlog1,.png?raw=true))
-![Backlog 2]([[[https://raw.githubusercontent.com/OyunveUygulamaAkademisi/Bootcamp2022Example/main/ProjectManagement/Sprint1Documents/backlog1.png](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/backlog1,.png?raw=true)https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/backlog1,.png?raw=true](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/backlog2.png)https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/backlog2.png](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/backlog2.png?raw=true)) 
+![Backlog 1](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/backlog1%2C.png)
+![Backlog 2](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/backlog2.png) 
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1]([https://github.com/OyunveUygulamaAkademisi/Bootcamp2022Example/blob/main/ProjectManagement/Sprint1Documents/product1.png](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/introduction_page.png))
-  ![Screenshot 2]([https://github.com/OyunveUygulamaAkademisi/Bootcamp2022Example/blob/main/ProjectManagement/Sprint1Documents/product2.png](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/signin_page.png))
-  ![Screenshot 3]([https://github.com/OyunveUygulamaAkademisi/Bootcamp2022Example/blob/main/ProjectManagement/Sprint1Documents/product4.gif](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/register_page.png)https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/register_page.png)
+  ![Screenshot 1](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/introduction_page.png)
+  ![Screenshot 2](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/signin_page.png)
+  ![Screenshot 3](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/register_page.png)
 
 - **Sprint Review**:
 Uygulama fikri, içeriği, ismi ve teması gibi konular konuşuldu, kullanıcı giriş sayfalarının ara yüzleri oluşturuldu ve firebase ile authentication servisleri aktif edildi. 
