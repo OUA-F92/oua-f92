@@ -63,20 +63,23 @@ class IntroductionPage extends StatelessWidget {
                     ),
                   );
                 },
-                child: Container(
-                  width: Get.width,
-                  height: Get.width / 8,
-                  decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(50)),
-                  child: Center(
-                      child: Text(
-                    "Kayıt ol",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w600,
-                        fontSize: Get.width / 25),
-                  )),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  child: Container(
+                    width: Get.width,
+                    height: Get.width / 8,
+                    decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(50)),
+                    child: Center(
+                        child: Text(
+                      "Kayıt ol",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: Get.width / 25),
+                    )),
+                  ),
                 ),
               ),
             ),
