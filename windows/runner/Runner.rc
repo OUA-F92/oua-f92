@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "oua_f92" "\0"
+            VALUE "FileDescription", "mentoru" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "oua_f92" "\0"
+            VALUE "InternalName", "mentoru" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "oua_f92.exe" "\0"
-            VALUE "ProductName", "oua_f92" "\0"
+            VALUE "OriginalFilename", "mentoru.exe" "\0"
+            VALUE "ProductName", "mentoru" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

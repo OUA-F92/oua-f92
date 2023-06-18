@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "13639668172",
+    "project_id": "mentoru-94040",
+    "storage_bucket": "mentoru-94040.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13639668172:android:f591d859ae81199df98d69",
+        "android_client_info": {
+          "package_name": "com.example.mentoru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13639668172-qe5nls4qkupitrljs188imjkmr13imsf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mentoru",
+            "certificate_hash": "7c0691d56e99d401d845c118d3f8c86631988f63"
+          }
+        },
+        {
+          "client_id": "13639668172-olcc86bdo91fq53b6n9cs6i1mbo8kk2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCU8iemR_33CwDyOhRCfZCBFAVQHhdsGJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13639668172-olcc86bdo91fq53b6n9cs6i1mbo8kk2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
