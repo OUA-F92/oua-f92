@@ -22,16 +22,29 @@ F92
 
 ## Ürün Açıklaması
 
+- MentorU, insanların kariyerlerinde ilerlemek, deneyimlerini paylaşmak ve birbirlerine destek olmak için bir araya geldiği mentorluk ve danışmanlık uygulamasıdır. Bu uygulama, kullanıcıların farklı alanlardaki deneyimleri olan kişilerle bağlantı kurarak bireysel mentörlük oturumları düzenlemelerine ve bilgi paylaşımında bulunmalarına olanak tanıyan interaktif bir ortam sunmaktadır. Üniversite öğrencileri, mesleki tecrübeye sahip kişilerle randevu talepleri gönderebilirken, aynı zamanda kendi bilgi birikimlerini paylaşarak lise öğrencilerine yardımcı olabilirler. MentorU, gönüllülerin değerli bilgilerini paylaşabileceği ve kendi özgeçmişlerinde gönüllülük deneyimlerine sahip olduklarını vurgulayabilecekleri bir platform sunar.
+
 ## Ürün Özellikleri
+
+- Yeni mezunlar ve genç profesyoneller, kariyerlerine yeni başlayanlar veya bir sonraki adıma geçmek isteyenler için uygulamamız, iş dünyasında rekabet edebilmek ve potansiyellerini tam anlamıyla ortaya çıkarmak için bir platform sunar. Daha deneyimli profesyonellerle bağlantı kurarak, sektördeki trendleri, beceri gereksinimlerini ve kariyer gelişim fırsatlarını öğrenebilirler.
+
+- Mentör ve Mentee Eşleştirme: Kullanıcılar, ilgi alanlarına, mesleki deneyimlere ve diğer kriterlere dayanarak uygun mentör veya mentee'lerle eşleştirilir.
+  
+- Randevu Düzenleme: Kullanıcılar, uygulama üzerinden mentörleriyle randevular ayarlayabilir ve online toplantılar için planlama yapabilir.
+
+- Geri Bildirim ve Puanlama: Mentee'ler, aldıkları mentörlük oturumlarını değerlendirebilir ve mentörlerine geri bildirim sağlayabilir. Mentörler, puanlandırılarak, başarıları ve gönüllülük deneyimleri için takdir edilir.
+
+- Profil Oluşturma: Kullanıcılar, ilgi alanlarını, deneyimlerini ve başarılarını vurgulayabilecekleri kişisel profillerini oluşturabilirler.
 
 ## Hedef Kitle
 
+- MentorU'nun hedef kitlesi geniş bir kullanıcı tabanına hitap eder. Üniversite öğrencileri, mezunlar, profesyoneller, meslek sahipleri ve lise öğrencileri gibi farklı gruplar uygulamayı kullanabilir. Özellikle, kariyerlerini geliştirmek, bir meslek hakkında bilgi edinmek veya başkalarına yardımcı olmak isteyen bireyler bu uygulamadan fayda sağlayabilirler. Aynı zamanda, gönüllü çalışma deneyimini vurgulamak isteyen kişiler de bu uygulamayı kullanarak mentörlük faaliyetlerine katılabilirler.
 
 # Sprint 1
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
-- **Puan tamamlama mantığı**: 
+- **Puan tamamlama mantığı**: Toplam backlog puanı 300 olarak belirlenmiştir. Her sprint 100 puan olacak şekilde 3 sprint gerçekleştirilecektir.
 
 - **Daily Scrum**: Daily Scrum toplantılarını sesli ve görüntülü olarak Discord üzerinden yazılı olarak ise Whatsapp üzerinden gerçekleştirmeye karar verdik. Daily Scrum toplantılarından bazı örneklerin yer aldığı dosya: [Sprint 1 Daily Scrum Chats](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/DailyScrumMeetingNotesSprint1.docx)
 
