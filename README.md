@@ -40,9 +40,10 @@ F92
 ![Backlog 2](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/backlog2.png) 
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/introduction_page.png)
-  ![Screenshot 2](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/signin_page.png)
-  ![Screenshot 3](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/register_page.png)
+  | Introduction Page      | Signin Page            | Signup Page            |
+  | ---------------------- | ---------------------- | ---------------------- |
+  | ![Screenshot 1](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/introduction_page.png) | ![Screenshot 2](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/signin_page.png) | ![Screenshot 3](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint1Documents/register_page.png) |
+
 
 - **Sprint Review**:
 Uygulama fikri, içeriği, ismi ve teması gibi konular konuşuldu, kullanıcı giriş sayfalarının ara yüzleri oluşturuldu ve firebase ile authentication servisleri aktif edildi. 
