@@ -1,12 +1,20 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:mentoru/models/user.dart' as model;
 
 class AuthMethods {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
-  // Signing Up User
+  Future<model.User> getUserDetails() async {
+    User currentUser = _auth.currentUser!;
 
+    DocumentSnapshot snap =
+        await _firestore.collection("users").doc(currentUser.uid).get();
+    return model.User.fromSnap(snap);
+  }
+
+  // Register
   Future<String> signUpUser({
     required String email,
     required String password,
@@ -16,8 +24,24 @@ class AuthMethods {
     try {
       if (email.isNotEmpty || password.isNotEmpty || username.isNotEmpty) {
         //regiter user
+        // ignore: unused_local_variable
         UserCredential cred = await _auth.createUserWithEmailAndPassword(
             email: email, password: password);
+
+        print(cred.user!.uid);
+
+        model.User user = model.User(
+            email: email,
+            bio: [],
+            image: [],
+            star: [],
+            uid: cred.user!.uid,
+            username: username);
+
+        await _firestore
+            .collection('users')
+            .doc(cred.user!.uid)
+            .set(user.toJson());
 
         response = 'success';
       }
@@ -29,6 +53,7 @@ class AuthMethods {
       } else if (e.code == "email-already-in-use") {
         response = "User already exist";
       }
+      // ignore: avoid_print
       print(e.code);
     } catch (e) {
       //response = e.toString();
@@ -37,7 +62,7 @@ class AuthMethods {
     return response;
   }
 
-  // logging in user
+  // Login
   Future<String> loginUser({
     required String email,
     required String password,

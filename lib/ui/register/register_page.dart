@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
-import 'package:mentoru/constants/colors.dart';
+import 'package:mentoru/utils/colors.dart';
 import 'package:mentoru/ui/home/home_page.dart';
-import 'package:mentoru/ui/introduction/introduction_page.dart';
 
 import '../../services/auth_methods.dart';
 import '../../widgets/custom_button_widget.dart';
@@ -11,7 +9,7 @@ import '../../widgets/custom_text_field.dart';
 import '../login/login_page.dart';
 
 class RegisterPage extends StatefulWidget {
-  const RegisterPage({super.key});
+  RegisterPage({super.key});
 
   @override
   State<RegisterPage> createState() => _RegisterPageState();
@@ -47,7 +45,7 @@ class _RegisterPageState extends State<RegisterPage> {
       // ignore: use_build_context_synchronously
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (context) => const HomePage(),
+          builder: (context) => HomePage(),
         ),
       );
     } else {
@@ -67,7 +65,7 @@ class _RegisterPageState extends State<RegisterPage> {
               FocusScope.of(context).unfocus();
             },
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -75,7 +73,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   children: [
                     Center(
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 10),
+                        padding: EdgeInsets.only(top: 10),
                         child: Image.asset(
                           "assets/image/LOGO.png",
                           width: Get.width / 10,
@@ -87,7 +85,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       shrinkWrap: true,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(bottom: 30),
+                          padding: EdgeInsets.only(bottom: 30),
                           child: Align(
                             alignment: Alignment.topCenter,
                             child: RichText(
@@ -123,7 +121,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           obscureText: true,
                           controller: _passwordController,
                           suffixIcon: Container(
-                            margin: const EdgeInsets.all(15),
+                            margin: EdgeInsets.all(15),
                             child: Image.asset(
                               "assets/icons/hide.png",
                               width: 5,
@@ -152,9 +150,9 @@ class _RegisterPageState extends State<RegisterPage> {
                                     )),
                         ),
                         Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 12),
+                          padding: EdgeInsets.symmetric(vertical: 12),
                           child: Row(
-                            children: const [
+                            children: [
                               Expanded(
                                 child: Divider(
                                     thickness: 1, color: Colors.black45),
@@ -188,7 +186,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                 height: Get.width * 0.06,
                               ),
                             )),
-                            const SizedBox(
+                            SizedBox(
                               width: 8,
                             ),
                             Expanded(
@@ -209,12 +207,12 @@ class _RegisterPageState extends State<RegisterPage> {
                     Align(
                       alignment: Alignment.bottomCenter,
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 10, bottom: 35),
+                        padding: EdgeInsets.only(top: 10, bottom: 35),
                         child: GestureDetector(
                           onTap: () {
                             Navigator.of(context).pushAndRemoveUntil(
                                 MaterialPageRoute(
-                                    builder: (context) => const LoginPage()),
+                                    builder: (context) => LoginPage()),
                                 (route) => false);
                           },
                           child: RichText(

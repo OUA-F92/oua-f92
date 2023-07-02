@@ -42,6 +42,8 @@ dependencies:
   internet_connection_checker: ^1.0.0+1
   provider: ^6.0.5
   get: ^4.6.5
+  persistent_bottom_nav_bar: ^5.0.2
+  circular_chart_flutter: ^0.0.2
 
 dev_dependencies:
   flutter_test:
@@ -83,11 +85,13 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: WorkSans
+    - family: Poppins
       fonts:
-        - asset: assets/font/WorkSans-Light.ttf
-        - asset: assets/font/WorkSans-Regular.ttf
-        - asset: assets/font/WorkSans-Medium.ttf
+        - asset: assets/font/Poppins-Light.ttf
+        - asset: assets/font/Poppins-Regular.ttf
+        - asset: assets/font/Poppins-Medium.ttf
+        - asset: assets/font/Poppins-SemiBold.ttf
+
 
   #         style: italic
   #   - family: Trajan Pro

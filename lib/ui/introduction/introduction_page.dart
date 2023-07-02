@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mentoru/ui/register/register_page.dart';
 
-import '../login/login_page.dart';
-
 class IntroductionPage extends StatelessWidget {
-  const IntroductionPage({super.key});
+  IntroductionPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +14,7 @@ class IntroductionPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Transform.translate(
-              offset: const Offset(0, 10),
+              offset: Offset(0, 10),
               child: Center(
                 child: Column(
                   children: [
@@ -37,14 +35,14 @@ class IntroductionPage extends StatelessWidget {
             Container(
               constraints: BoxConstraints(minWidth: Get.width),
               height: Get.width * 1.03,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage("assets/image/Mask group.png"))),
             ),
             Transform.translate(
-                offset: const Offset(0, -50),
+                offset: Offset(0, -50),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding: EdgeInsets.symmetric(horizontal: 16),
                   child: Text(
                     "Hadi\nBaşlayalım!",
                     style: TextStyle(
@@ -59,12 +57,12 @@ class IntroductionPage extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
-                      builder: (context) => const RegisterPage(),
+                      builder: (context) => RegisterPage(),
                     ),
                   );
                 },
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  padding: EdgeInsets.symmetric(horizontal: 12),
                   child: Container(
                     width: Get.width,
                     height: Get.width / 8,
@@ -83,7 +81,7 @@ class IntroductionPage extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(
+            SizedBox(
               height: 20,
             )
           ],

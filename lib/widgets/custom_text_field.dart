@@ -7,7 +7,7 @@ class CustomTextField extends StatelessWidget {
   final bool obscureText;
   final TextEditingController controller;
 
-  const CustomTextField(
+  CustomTextField(
       {super.key,
       required this.hintText,
       this.suffixIcon,
@@ -17,14 +17,13 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 6),
+      padding: EdgeInsets.symmetric(vertical: 6),
       child: TextField(
         controller: controller,
-        style: const TextStyle(fontWeight: FontWeight.w600),
+        style: TextStyle(fontWeight: FontWeight.w600),
         obscureText: obscureText,
         decoration: InputDecoration(
-            contentPadding:
-                const EdgeInsets.symmetric(vertical: 12, horizontal: 12),
+            contentPadding: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
             fillColor: Colors.white30,
             border: InputBorder.none,
             filled: true,

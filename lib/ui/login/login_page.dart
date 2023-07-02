@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mentoru/ui/home/home_page.dart';
 import 'package:mentoru/ui/register/register_page.dart';
+import 'package:mentoru/utils/utils.dart';
 
-import '../../constants/colors.dart';
+import '../../utils/colors.dart';
 import '../../services/auth_methods.dart';
 import '../../widgets/custom_button_widget.dart';
 import '../../widgets/custom_text_field.dart';
-import '../introduction/introduction_page.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+  LoginPage({super.key});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -35,11 +35,13 @@ class _LoginPageState extends State<LoginPage> {
         email: _emailController.text, password: _passwordController.text);
 
     if (response == "success") {
+      // ignore: use_build_context_synchronously
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const HomePage()),
+        MaterialPageRoute(builder: (context) => HomePage()),
       );
     } else {
-      Get.snackbar("Error", response);
+      // ignore: use_build_context_synchronously
+      showSnackBar(response, context);
     }
 
     _isLoading = false;
@@ -55,7 +57,7 @@ class _LoginPageState extends State<LoginPage> {
               FocusScope.of(context).unfocus();
             },
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -63,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                   children: [
                     Center(
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 10),
+                        padding: EdgeInsets.only(top: 10),
                         child: Image.asset(
                           "assets/image/LOGO.png",
                           width: Get.width / 10,
@@ -75,7 +77,7 @@ class _LoginPageState extends State<LoginPage> {
                       shrinkWrap: true,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(bottom: 30),
+                          padding: EdgeInsets.only(bottom: 30),
                           child: Align(
                             alignment: Alignment.topCenter,
                             child: RichText(
@@ -105,7 +107,7 @@ class _LoginPageState extends State<LoginPage> {
                           obscureText: true,
                           controller: _passwordController,
                           suffixIcon: Container(
-                            margin: const EdgeInsets.all(15),
+                            margin: EdgeInsets.all(15),
                             child: Image.asset(
                               "assets/icons/hide.png",
                               width: 5,
@@ -115,7 +117,7 @@ class _LoginPageState extends State<LoginPage> {
                         Align(
                           alignment: Alignment.centerRight,
                           child: Padding(
-                            padding: const EdgeInsets.only(top: 10, bottom: 35),
+                            padding: EdgeInsets.only(top: 10, bottom: 35),
                             child: Text(
                               "Şifremi Unuttum",
                               style: TextStyle(
@@ -146,9 +148,9 @@ class _LoginPageState extends State<LoginPage> {
                                     )),
                         ),
                         Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 12),
+                          padding: EdgeInsets.symmetric(vertical: 12),
                           child: Row(
-                            children: const [
+                            children: [
                               Expanded(
                                 child: Divider(
                                     thickness: 1, color: Colors.black45),
@@ -182,7 +184,7 @@ class _LoginPageState extends State<LoginPage> {
                                 height: Get.width * 0.06,
                               ),
                             )),
-                            const SizedBox(
+                            SizedBox(
                               width: 8,
                             ),
                             Expanded(
@@ -203,10 +205,10 @@ class _LoginPageState extends State<LoginPage> {
                     Align(
                       alignment: Alignment.bottomCenter,
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 10, bottom: 35),
+                        padding: EdgeInsets.only(top: 10, bottom: 35),
                         child: GestureDetector(
                           onTap: () {
-                            Get.offAll(const RegisterPage());
+                            Get.offAll(RegisterPage());
                           },
                           child: RichText(
                             text: TextSpan(
