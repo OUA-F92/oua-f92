@@ -63,3 +63,26 @@ Uygulama fikri, içeriği, ismi ve teması gibi konular konuşuldu, kullanıcı 
 
 - **Sprint Retrospective:**
 Takım içerisindeki roller yeniden değerlendirildi ve product owner değiştirildi.
+
+# Sprint 2
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+
+- **Puan tamamlama mantığı**: Toplam backlog puanı 300 olarak belirlenmiştir. Her sprint 100 puan olacak şekilde 3 sprint gerçekleştirilecektir.
+
+- **Daily Scrum**: Daily Scrum toplantılarını sesli ve görüntülü olarak Discord üzerinden yazılı olarak ise Whatsapp üzerinden gerçekleştirmeye karar verdik. Daily Scrum toplantılarından bazı örneklerin yer aldığı dosya: [Sprint 2 Daily Scrum Chats](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint2Documents/DailyScrumMeetingsSprint2.odt)
+
+- **Sprint board update**: Sprint board screenshotları: 
+![Backlog 1](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint2Documents/backlog.jpg)
+
+- **Ürün Durumu**: Ekran görüntüleri:
+  | Home Page              |
+  | ---------------------- |
+  | ![Screenshot 1](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint2Documents/homepage.jpg) |
+
+
+- **Sprint Review**:
+Uygulamanın sayfa içeriklerine karar verildi, kullanıcı verisi için yapı kuruldu ve tasarımlar yapılmaya başlandı. 
+
+- **Sprint Retrospective:**
+Takım üyelerinin görev takibi ve zaman yönetimi konusunda daha dikkatli olması gerektiği konusunda karar alınmıştır.
