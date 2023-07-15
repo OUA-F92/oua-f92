@@ -5,7 +5,7 @@ import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 import '../ui/discover/discover_page.dart';
 import '../ui/profile_page.dart';
-import '../ui/schedule_page.dart';
+import '../ui/schedule/schedule_page.dart';
 
 class CustomNavBar extends StatefulWidget {
   const CustomNavBar({super.key});

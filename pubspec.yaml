@@ -50,6 +50,7 @@ dependencies:
   flutter_rating_bar: ^4.0.1
   anim_search_bar: ^2.0.3
   syncfusion_flutter_calendar: ^22.1.38
+  cr_calendar: ^1.2.1
 
 dev_dependencies:
   flutter_test:

@@ -20,17 +20,6 @@ class _DiscoverPageState extends State<DiscoverPage> {
   TextEditingController textController = TextEditingController();
 
   @override
-  void initState() {
-    super.initState();
-    addData();
-  }
-
-  void addData() async {
-    CategoyProvider categoryProvider = Provider.of(context, listen: false);
-    await categoryProvider.refreshUser();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: GestureDetector(

@@ -3,7 +3,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
-import 'package:mentoru/providers/category_provider.dart';
 import 'package:mentoru/providers/user_provider.dart';
 import 'package:mentoru/ui/introduction/introduction_page.dart';
 import 'package:mentoru/utils/colors.dart';
@@ -43,7 +42,7 @@ class _MyAppState extends State<MyApp> {
           return InternetConnectionChecker().onStatusChange;
         },
         child: MultiProvider(
-          providers: [ChangeNotifierProvider(create: (_) => UserProvider()), ChangeNotifierProvider(create: (_) => CategoyProvider())],
+          providers: [ChangeNotifierProvider(create: (_) => UserProvider()), ChangeNotifierProvider(create: (_) => UserProvider())],
           child: GetMaterialApp(
             debugShowCheckedModeBanner: false,
             theme: ThemeData(fontFamily: "Poppins"),
