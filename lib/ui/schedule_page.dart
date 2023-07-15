@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import '../../Widgets/internet_not_available.dart';
 
 class SchedulePage extends StatelessWidget {
-  SchedulePage({super.key});
+  const SchedulePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,20 +14,18 @@ class SchedulePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Visibility(
-            visible: Provider.of<InternetConnectionStatus>(context) ==
-                InternetConnectionStatus.disconnected,
+            visible: Provider.of<InternetConnectionStatus>(context) == InternetConnectionStatus.disconnected,
             child: InternetNotAvailable(),
           ),
-          Provider.of<InternetConnectionStatus>(context) ==
-                  InternetConnectionStatus.disconnected
-              ? Expanded(
+          Provider.of<InternetConnectionStatus>(context) == InternetConnectionStatus.disconnected
+              ? const Expanded(
                   child: Center(
                     child: Text(
                       'Not connected',
                     ),
                   ),
                 )
-              : Expanded(
+              : const Expanded(
                   child: Center(
                     child: Text("Meeting Page"),
                   ),

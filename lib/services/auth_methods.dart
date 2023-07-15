@@ -9,8 +9,7 @@ class AuthMethods {
   Future<model.User> getUserDetails() async {
     User currentUser = _auth.currentUser!;
 
-    DocumentSnapshot snap =
-        await _firestore.collection("users").doc(currentUser.uid).get();
+    DocumentSnapshot snap = await _firestore.collection("users").doc(currentUser.uid).get();
     return model.User.fromSnap(snap);
   }
 
@@ -25,23 +24,24 @@ class AuthMethods {
       if (email.isNotEmpty || password.isNotEmpty || username.isNotEmpty) {
         //regiter user
         // ignore: unused_local_variable
-        UserCredential cred = await _auth.createUserWithEmailAndPassword(
-            email: email, password: password);
+        UserCredential cred = await _auth.createUserWithEmailAndPassword(email: email, password: password);
 
+        // ignore: avoid_print
         print(cred.user!.uid);
 
         model.User user = model.User(
-            email: email,
-            bio: [],
-            image: [],
-            star: [],
-            uid: cred.user!.uid,
-            username: username);
+          occupation: [],
+          age: [],
+          location: [],
+          email: email,
+          bio: [],
+          image: [],
+          star: [],
+          uid: cred.user!.uid,
+          username: username,
+        );
 
-        await _firestore
-            .collection('users')
-            .doc(cred.user!.uid)
-            .set(user.toJson());
+        await _firestore.collection('users').doc(cred.user!.uid).set(user.toJson());
 
         response = 'success';
       }

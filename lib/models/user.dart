@@ -7,9 +7,15 @@ class User {
   final List bio;
   final List star;
   final List image;
+  final List age;
+  final List occupation;
+  final List location;
 
   User(
-      {required this.email,
+      {required this.age,
+      required this.occupation,
+      required this.location,
+      required this.email,
       required this.bio,
       required this.image,
       required this.star,
@@ -23,17 +29,24 @@ class User {
         "bio": bio,
         "star": star,
         "image": image,
+        "occupation": occupation,
+        "age": age,
+        "location": location
       };
 
   static User fromSnap(DocumentSnapshot snap) {
     var snapshot = snap.data() as Map<String, dynamic>;
 
     return User(
-        email: snapshot["email"],
-        bio: snapshot["bio"],
-        image: snapshot["image"],
-        star: snapshot["star"],
-        uid: snapshot["uid"],
-        username: snapshot["username"]);
+      occupation: snapshot["occupation"],
+      age: snapshot["age"],
+      location: snapshot["location"],
+      email: snapshot["email"],
+      bio: snapshot["bio"],
+      image: snapshot["image"],
+      star: snapshot["star"],
+      uid: snapshot["uid"],
+      username: snapshot["username"],
+    );
   }
 }

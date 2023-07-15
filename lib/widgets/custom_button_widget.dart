@@ -7,7 +7,7 @@ class CustomButton extends StatelessWidget {
   final bool isBorder;
   final bool isFilled;
 
-  CustomButton({
+  const CustomButton({
     super.key,
     required this.onTap,
     required this.child,
@@ -18,7 +18,7 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 8),
+      padding: const EdgeInsets.symmetric(vertical: 8),
       child: GestureDetector(
           onTap: onTap,
           child: Container(
@@ -26,10 +26,8 @@ class CustomButton extends StatelessWidget {
             decoration: BoxDecoration(
                 color: isFilled ? Colors.black : Colors.transparent,
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(
-                    color: isBorder ? Colors.grey : Colors.transparent)),
-            child: Padding(
-                padding: EdgeInsets.symmetric(vertical: 16), child: child),
+                border: Border.all(color: isBorder ? Colors.grey : Colors.transparent)),
+            child: Padding(padding: const EdgeInsets.symmetric(vertical: 16), child: child),
           )),
     );
   }

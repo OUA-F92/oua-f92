@@ -12,11 +12,11 @@ import 'package:provider/provider.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
-  MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -51,6 +51,7 @@ class _MyAppState extends State<MyApp> {
                 builder: (context, snapshot) {
                   if (snapshot.connectionState == ConnectionState.active) {
                     if (snapshot.hasData) {
+                      // ignore: prefer_const_constructors
                       return CustomNavBar();
                     } else if (snapshot.hasError) {
                       return Center(
@@ -59,14 +60,14 @@ class _MyAppState extends State<MyApp> {
                     }
                   }
                   if (snapshot.connectionState == ConnectionState.waiting) {
-                    return Center(
+                    return const Center(
                       child: CircularProgressIndicator(
                         color: purpleColor,
                       ),
                     );
                   }
 
-                  return IntroductionPage();
+                  return const IntroductionPage();
                 }),
           ),
         ));

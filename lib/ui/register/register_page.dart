@@ -9,7 +9,7 @@ import '../../widgets/custom_text_field.dart';
 import '../login/login_page.dart';
 
 class RegisterPage extends StatefulWidget {
-  RegisterPage({super.key});
+  const RegisterPage({super.key});
 
   @override
   State<RegisterPage> createState() => _RegisterPageState();
@@ -45,7 +45,7 @@ class _RegisterPageState extends State<RegisterPage> {
       // ignore: use_build_context_synchronously
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (context) => HomePage(),
+          builder: (context) => const HomePage(),
         ),
       );
     } else {
@@ -65,7 +65,7 @@ class _RegisterPageState extends State<RegisterPage> {
               FocusScope.of(context).unfocus();
             },
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -73,7 +73,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   children: [
                     Center(
                       child: Padding(
-                        padding: EdgeInsets.only(top: 10),
+                        padding: const EdgeInsets.only(top: 10),
                         child: Image.asset(
                           "assets/image/LOGO.png",
                           width: Get.width / 10,
@@ -85,24 +85,18 @@ class _RegisterPageState extends State<RegisterPage> {
                       shrinkWrap: true,
                       children: [
                         Padding(
-                          padding: EdgeInsets.only(bottom: 30),
+                          padding: const EdgeInsets.only(bottom: 30),
                           child: Align(
                             alignment: Alignment.topCenter,
                             child: RichText(
                               textAlign: TextAlign.center,
                               text: TextSpan(
                                   text: "Şimdi başlamak için,\n",
-                                  style: TextStyle(
-                                      color: Colors.black45,
-                                      fontWeight: FontWeight.w400,
-                                      fontSize: Get.width / 16),
+                                  style: TextStyle(color: Colors.black45, fontWeight: FontWeight.w400, fontSize: Get.width / 16),
                                   children: <TextSpan>[
                                     TextSpan(
                                       text: "Kayıt ol!",
-                                      style: TextStyle(
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.w600,
-                                          fontSize: Get.width / 16),
+                                      style: TextStyle(color: Colors.black, fontWeight: FontWeight.w600, fontSize: Get.width / 16),
                                     )
                                   ]),
                             ),
@@ -121,7 +115,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           obscureText: true,
                           controller: _passwordController,
                           suffixIcon: Container(
-                            margin: EdgeInsets.all(15),
+                            margin: const EdgeInsets.all(15),
                             child: Image.asset(
                               "assets/icons/hide.png",
                               width: 5,
@@ -137,38 +131,31 @@ class _RegisterPageState extends State<RegisterPage> {
                                   ? SizedBox(
                                       width: Get.width * 0.05,
                                       height: Get.width * 0.05,
-                                      child: CircularProgressIndicator(
+                                      child: const CircularProgressIndicator(
                                         color: Colors.green,
                                       ),
                                     )
                                   : Text(
                                       "Kayıt ol",
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.w600,
-                                          fontSize: Get.width / 24),
+                                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: Get.width / 24),
                                     )),
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.symmetric(vertical: 12),
                           child: Row(
                             children: [
                               Expanded(
-                                child: Divider(
-                                    thickness: 1, color: Colors.black45),
+                                child: Divider(thickness: 1, color: Colors.black45),
                               ),
                               Padding(
                                 padding: EdgeInsets.symmetric(horizontal: 12),
                                 child: Text(
                                   "Birlikte giriş yap",
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.w500,
-                                      color: Colors.black45),
+                                  style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black45),
                                 ),
                               ),
                               Expanded(
-                                child: Divider(
-                                    thickness: 1, color: Colors.black45),
+                                child: Divider(thickness: 1, color: Colors.black45),
                               ),
                             ],
                           ),
@@ -186,7 +173,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                 height: Get.width * 0.06,
                               ),
                             )),
-                            SizedBox(
+                            const SizedBox(
                               width: 8,
                             ),
                             Expanded(
@@ -207,13 +194,11 @@ class _RegisterPageState extends State<RegisterPage> {
                     Align(
                       alignment: Alignment.bottomCenter,
                       child: Padding(
-                        padding: EdgeInsets.only(top: 10, bottom: 35),
+                        padding: const EdgeInsets.only(top: 10, bottom: 35),
                         child: GestureDetector(
                           onTap: () {
-                            Navigator.of(context).pushAndRemoveUntil(
-                                MaterialPageRoute(
-                                    builder: (context) => LoginPage()),
-                                (route) => false);
+                            Navigator.of(context)
+                                .pushAndRemoveUntil(MaterialPageRoute(builder: (context) => const LoginPage()), (route) => false);
                           },
                           child: RichText(
                             text: TextSpan(

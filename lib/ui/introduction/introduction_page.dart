@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:mentoru/ui/register/register_page.dart';
 
 class IntroductionPage extends StatelessWidget {
-  IntroductionPage({super.key});
+  const IntroductionPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,19 +14,17 @@ class IntroductionPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Transform.translate(
-              offset: Offset(0, 10),
+              offset: const Offset(0, 10),
               child: Center(
                 child: Column(
                   children: [
                     Image.asset(
                       "assets/image/LOGO.png",
                       width: Get.width / 10,
-                      height: Get.width / 10,
                     ),
                     Text(
                       "MentorU",
-                      style: TextStyle(
-                          color: Colors.black, fontSize: Get.width / 20),
+                      style: TextStyle(color: Colors.black, fontSize: Get.width / 20),
                     ),
                   ],
                 ),
@@ -34,15 +32,13 @@ class IntroductionPage extends StatelessWidget {
             ),
             Container(
               constraints: BoxConstraints(minWidth: Get.width),
-              height: Get.width * 1.03,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/image/Mask group.png"))),
+              height: Get.width,
+              decoration: const BoxDecoration(image: DecorationImage(image: AssetImage("assets/image/Mask group.png"))),
             ),
             Transform.translate(
-                offset: Offset(0, -50),
+                offset: const Offset(0, -50),
                 child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Text(
                     "Hadi\nBaşlayalım!",
                     style: TextStyle(
@@ -57,31 +53,26 @@ class IntroductionPage extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
-                      builder: (context) => RegisterPage(),
+                      builder: (context) => const RegisterPage(),
                     ),
                   );
                 },
                 child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 12),
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
                   child: Container(
                     width: Get.width,
                     height: Get.width / 8,
-                    decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(50)),
+                    decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(50)),
                     child: Center(
                         child: Text(
                       "Kayıt ol",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w600,
-                          fontSize: Get.width / 25),
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: Get.width / 25),
                     )),
                   ),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             )
           ],

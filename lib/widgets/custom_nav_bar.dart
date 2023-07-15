@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:mentoru/ui/home/discover_page.dart';
 import 'package:mentoru/ui/home/home_page.dart';
-import 'package:mentoru/ui/home/profile_page.dart';
-import 'package:mentoru/ui/home/schedule_page.dart';
 import 'package:mentoru/utils/colors.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
+import '../ui/discover_page.dart';
+import '../ui/profile_page.dart';
+import '../ui/schedule_page.dart';
+
 class CustomNavBar extends StatefulWidget {
-  CustomNavBar({super.key});
+  const CustomNavBar({super.key});
 
   @override
   State<CustomNavBar> createState() => _CustomNavBarState();
@@ -23,7 +24,8 @@ class _CustomNavBarState extends State<CustomNavBar> {
   }
 
   List<Widget> _buildScreens() {
-    return [HomePage(), DiscoverPage(), SchedulePage(), ProfilePage()];
+    // ignore: prefer_const_constructors
+    return [HomePage(), const DiscoverPage(), const SchedulePage(), const ProfilePage()];
   }
 
   List<PersistentBottomNavBarItem> _navBarsItems() {
@@ -31,7 +33,7 @@ class _CustomNavBarState extends State<CustomNavBar> {
       PersistentBottomNavBarItem(
         icon: Image.asset(
           "assets/icons/home.png",
-          color: Color.fromARGB(255, 96, 39, 176),
+          color: const Color.fromARGB(255, 96, 39, 176),
         ),
         activeColorPrimary: purpleColor,
         inactiveIcon: Image.asset("assets/icons/home.png"),
@@ -40,7 +42,7 @@ class _CustomNavBarState extends State<CustomNavBar> {
       PersistentBottomNavBarItem(
         icon: Image.asset(
           "assets/icons/discover.png",
-          color: Color.fromARGB(255, 96, 39, 176),
+          color: const Color.fromARGB(255, 96, 39, 176),
         ),
         activeColorPrimary: purpleColor,
         inactiveIcon: Image.asset(
@@ -51,7 +53,7 @@ class _CustomNavBarState extends State<CustomNavBar> {
       PersistentBottomNavBarItem(
         icon: Image.asset(
           "assets/icons/meeting.png",
-          color: Color.fromARGB(255, 96, 39, 176),
+          color: const Color.fromARGB(255, 96, 39, 176),
         ),
         activeColorPrimary: purpleColor,
         inactiveIcon: Image.asset(
@@ -62,7 +64,7 @@ class _CustomNavBarState extends State<CustomNavBar> {
       PersistentBottomNavBarItem(
         icon: Image.asset(
           "assets/icons/profile.png",
-          color: Color.fromARGB(255, 96, 39, 176),
+          color: const Color.fromARGB(255, 96, 39, 176),
         ),
         inactiveIcon: Image.asset(
           "assets/icons/profile.png",
@@ -92,11 +94,11 @@ class _CustomNavBarState extends State<CustomNavBar> {
       ),
       popAllScreensOnTapOfSelectedTab: true,
       popActionScreens: PopActionScreensType.all,
-      itemAnimationProperties: ItemAnimationProperties(
+      itemAnimationProperties: const ItemAnimationProperties(
         duration: Duration(milliseconds: 200),
         curve: Curves.ease,
       ),
-      screenTransitionAnimation: ScreenTransitionAnimation(
+      screenTransitionAnimation: const ScreenTransitionAnimation(
         animateTabTransition: true,
         curve: Curves.ease,
         duration: Duration(milliseconds: 200),

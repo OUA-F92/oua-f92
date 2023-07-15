@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
 class InternetNotAvailable extends StatelessWidget {
-  InternetNotAvailable({Key? key}) : super(key: key);
+  const InternetNotAvailable({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10.00),
-      margin: EdgeInsets.only(bottom: 10.00),
+      padding: const EdgeInsets.all(10.00),
+      margin: const EdgeInsets.only(bottom: 10.00),
       color: Colors.red,
       child: Row(children: [
         Container(
-          margin: EdgeInsets.only(right: 6.00),
-          child: Icon(Icons.info, color: Colors.white),
+          margin: const EdgeInsets.only(right: 6.00),
+          child: const Icon(Icons.info, color: Colors.white),
         ), // icon for error message
 
-        Text("No internet connection", style: TextStyle(color: Colors.white)),
+        const Text("No internet connection", style: TextStyle(color: Colors.white)),
         //show error message text
       ]),
     );
