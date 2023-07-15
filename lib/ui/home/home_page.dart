@@ -4,6 +4,7 @@ import 'package:mentoru/ui/home/widgets/graph_card_widget.dart';
 import 'package:mentoru/ui/home/widgets/my_plan_widget.dart';
 
 import '../../widgets/appbar_with_name_widget.dart';
+import '../../widgets/title_text_widget.dart';
 import 'widgets/popular_card_list_widget.dart';
 
 class HomePage extends StatefulWidget {
@@ -24,11 +25,10 @@ class _HomePageState extends State<HomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               const appbar_with_name(),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 5),
-                child: Text(
-                  "Aktivitelerim",
-                  style: TextStyle(fontSize: Get.width / 24, fontWeight: FontWeight.w500),
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 5),
+                child: TitleTextWidget(
+                  title: "Aktivitelerim",
                 ),
               ),
               const graphCardWidget(),
@@ -40,9 +40,8 @@ class _HomePageState extends State<HomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      "Popüler",
-                      style: TextStyle(fontSize: Get.width / 24, fontWeight: FontWeight.w500),
+                    TitleTextWidget(
+                      title: "Popüler",
                     ),
                     TextButton(
                         onPressed: () {},
@@ -62,9 +61,8 @@ class _HomePageState extends State<HomePage> {
               SizedBox(
                 height: Get.width * 0.1,
               ),
-              Text(
-                "Planım",
-                style: TextStyle(fontSize: Get.width / 24, fontWeight: FontWeight.w500),
+              TitleTextWidget(
+                title: "Planım",
               ),
               const MyPlanWidget()
             ],
