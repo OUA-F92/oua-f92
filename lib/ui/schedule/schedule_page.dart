@@ -50,7 +50,7 @@ class _SchedulePageState extends State<SchedulePage> {
         Timestamp dateTime = element.data()["dateTime"];
         String assignedToUserId = element.data()["assignedToUserId"];
         String createdByUserId = element.data()["createdByUserId"];
-        String id = element["id"];
+        String id = element.id;
 
         appointments.add(AppointmentModel(
             id: id,
