@@ -93,14 +93,18 @@ Takım üyelerinin görev takibi ve zaman yönetimi konusunda daha dikkatli olma
 
 - **Puan tamamlama mantığı**: Toplam backlog puanı 300 olarak belirlenmiştir. Her sprint 100 puan olacak şekilde 3 sprint gerçekleştirilecektir.
 
-- **Daily Scrum**: Daily Scrum toplantılarını sesli ve görüntülü olarak Discord üzerinden yapılmıştır
+- **Daily Scrum**: Daily Scrum toplantılarını sesli ve görüntülü olarak Discord üzerinden yapılmıştır. Daily Scrum toplantılarından bazı örneklerin yer aldığı dosya: [Sprint 3 Daily Scrum Chats](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint3Documents/DailyScrumMeetingsSprint3.docx)
 
-- **Sprint board update**: Sprint board screenshotları:
+- **Sprint board update**: Sprint board screenshotları: 
+![Backlog 1](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint3Documents/backlog.png)
 
 - **Ürün Durumu**: Ekran görüntüleri:
+  | Discover Page      | Schedule Page            | Profile Page            | Meeting Page            |
+  | ---------------------- | ---------------------- | ---------------------- | ---------------------- |
+  | ![Screenshot 1](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint3Documents/Ekran%20Görüntüsü%20(2).png) | ![Screenshot 2](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint3Documents/Ekran%20Görüntüsü%20(3).png) | ![Screenshot 3](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint3Documents/Ekran%20Görüntüsü%20(4).png) | ![Screenshot 3](https://github.com/OUA-F92/oua-f92/blob/main/ProjecManagement/Sprint3Documents/Ekran%20Görüntüsü%20(5).png) |
 
 - **Sprint Review**:
-uygulamaya takvim eklendi uygulamaya goruntulu sohbet eklendi ve uygulamaya filtreleme eklenmeye çalışılacak
+Uygulamaya etkinlik takibi ve video konferans eklendi.
 
 - **Sprint Retrospective:**
-takım içi neler yapılabileceği konuşuldu uygulama uzerine düşünüldü
+Takım içerisindeki son durum konuşuldu ve herkes tebrik edildi.
