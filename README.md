@@ -86,3 +86,21 @@ Uygulamanın sayfa içeriklerine karar verildi, kullanıcı verisi için yapı k
 
 - **Sprint Retrospective:**
 Takım üyelerinin görev takibi ve zaman yönetimi konusunda daha dikkatli olması gerektiği konusunda karar alınmıştır.
+
+# Sprint 3
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+
+- **Puan tamamlama mantığı**: Toplam backlog puanı 300 olarak belirlenmiştir. Her sprint 100 puan olacak şekilde 3 sprint gerçekleştirilecektir.
+
+- **Daily Scrum**: Daily Scrum toplantılarını sesli ve görüntülü olarak Discord üzerinden yapılmıştır
+
+- **Sprint board update**: Sprint board screenshotları:
+
+- **Ürün Durumu**: Ekran görüntüleri:
+
+- **Sprint Review**:
+uygulamaya takvim eklendi uygulamaya goruntulu sohbet eklendi ve uygulamaya filtreleme eklenmeye çalışılacak
+
+- **Sprint Retrospective:**
+takım içi neler yapılabileceği konuşuldu uygulama uzerine düşünüldü
