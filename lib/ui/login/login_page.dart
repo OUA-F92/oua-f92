@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:mentoru/ui/home/home_page.dart';
 import 'package:mentoru/ui/register/register_page.dart';
 import 'package:mentoru/utils/utils.dart';
+import 'package:mentoru/widgets/custom_nav_bar.dart';
 
 import '../../utils/colors.dart';
 import '../../services/auth_methods.dart';
@@ -36,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
     if (response == "success") {
       // ignore: use_build_context_synchronously
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const HomePage()),
+        MaterialPageRoute(builder: (context) => const CustomNavBar()),
       );
     } else {
       // ignore: use_build_context_synchronously

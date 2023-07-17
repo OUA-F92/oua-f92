@@ -1,8 +1,11 @@
 import 'package:anim_search_bar/anim_search_bar.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../utils/utils.dart';
 import 'title_text_widget.dart';
 
 class AppBarWithText extends StatefulWidget {

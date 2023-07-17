@@ -1,6 +1,9 @@
+import 'dart:typed_data';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:mentoru/models/user.dart' as model;
+import 'package:mentoru/services/storage_methods.dart';
 
 class AuthMethods {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -14,14 +17,23 @@ class AuthMethods {
   }
 
   // Register
-  Future<String> signUpUser({
-    required String email,
-    required String password,
-    required String username,
-  }) async {
+  Future<String> signUpUser(
+      {required String email,
+      required String password,
+      required String username,
+      required String nameSurname,
+      required String occupation,
+      required String locaiton,
+      required Uint8List imageUrl}) async {
     String response = "Some error ocured";
     try {
-      if (email.isNotEmpty || password.isNotEmpty || username.isNotEmpty) {
+      if (email.isNotEmpty ||
+          password.isNotEmpty ||
+          username.isNotEmpty ||
+          nameSurname.isNotEmpty ||
+          locaiton.isNotEmpty ||
+          occupation.isNotEmpty ||
+          imageUrl.isNotEmpty) {
         //regiter user
         // ignore: unused_local_variable
         UserCredential cred = await _auth.createUserWithEmailAndPassword(email: email, password: password);
@@ -29,13 +41,14 @@ class AuthMethods {
         // ignore: avoid_print
         print(cred.user!.uid);
 
+        String photoUrl = await StorageMethods().uploadImageToStorage('profilePics', imageUrl, false);
+
         model.User user = model.User(
-          occupation: [],
-          age: [],
-          location: [],
+          occupation: occupation,
+          location: locaiton,
           email: email,
-          bio: [],
-          image: [],
+          bio: "",
+          image: photoUrl,
           star: [],
           uid: cred.user!.uid,
           username: username,
@@ -47,11 +60,11 @@ class AuthMethods {
       }
     } on FirebaseAuthException catch (e) {
       if (e.code == 'invalid-email') {
-        response = "The email is badly formatted.";
+        response = "E-posta formatı yanlış";
       } else if (e.code == "weak-password") {
-        response = "Password should be at least 6 characters";
+        response = "Şifre en az 6 karaktere sahip olmalıdır";
       } else if (e.code == "email-already-in-use") {
-        response = "User already exist";
+        response = "Kullanıcı zaten var";
       }
       // ignore: avoid_print
       print(e.code);

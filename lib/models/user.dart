@@ -4,16 +4,14 @@ class User {
   final String email;
   final String username;
   final String uid;
-  final List bio;
+  final String bio;
   final List star;
-  final List image;
-  final List age;
-  final List occupation;
-  final List location;
+  final String image;
+  final String occupation;
+  final String location;
 
   User(
-      {required this.age,
-      required this.occupation,
+      {required this.occupation,
       required this.location,
       required this.email,
       required this.bio,
@@ -30,7 +28,6 @@ class User {
         "star": star,
         "image": image,
         "occupation": occupation,
-        "age": age,
         "location": location
       };
 
@@ -39,7 +36,6 @@ class User {
 
     return User(
       occupation: snapshot["occupation"],
-      age: snapshot["age"],
       location: snapshot["location"],
       email: snapshot["email"],
       bio: snapshot["bio"],

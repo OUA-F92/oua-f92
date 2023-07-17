@@ -12,7 +12,8 @@ class TitleTextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: TextStyle(fontSize: Get.width / 24, fontWeight: FontWeight.w500),
+      maxLines: 1,
+      style: TextStyle(fontSize: Get.width / 24, fontWeight: FontWeight.w500, overflow: TextOverflow.ellipsis),
     );
   }
 }

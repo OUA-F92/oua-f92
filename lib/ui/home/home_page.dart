@@ -58,13 +58,6 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               const PopularCardListWidget(),
-              SizedBox(
-                height: Get.width * 0.1,
-              ),
-              TitleTextWidget(
-                title: "Planım",
-              ),
-              const MyPlanWidget()
             ],
           ),
         ),

@@ -4,7 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:mentoru/providers/user_provider.dart';
+import 'package:mentoru/ui/discover/discover_page.dart';
+import 'package:mentoru/ui/home/home_page.dart';
 import 'package:mentoru/ui/introduction/introduction_page.dart';
+import 'package:mentoru/ui/profile_page.dart';
+import 'package:mentoru/ui/schedule/schedule_page.dart';
 import 'package:mentoru/utils/colors.dart';
 import 'package:mentoru/widgets/custom_nav_bar.dart';
 import 'package:provider/provider.dart';
@@ -23,17 +27,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  @override
-  void initState() {
-    super.initState();
-    addData();
-  }
-
-  void addData() async {
-    UserProvider userProvider = Provider.of(context, listen: false);
-    await userProvider.refreshUser();
-  }
-
   @override
   Widget build(BuildContext context) {
     return StreamProvider<InternetConnectionStatus>(

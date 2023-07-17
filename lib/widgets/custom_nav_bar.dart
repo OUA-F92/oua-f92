@@ -20,12 +20,12 @@ class _CustomNavBarState extends State<CustomNavBar> {
   @override
   void initState() {
     super.initState();
-    _controller = PersistentTabController();
+    _controller = PersistentTabController(initialIndex: 0);
   }
 
   List<Widget> _buildScreens() {
     // ignore: prefer_const_constructors
-    return [HomePage(), const DiscoverPage(), const SchedulePage(), const ProfilePage()];
+    return [HomePage(), const DiscoverPage(), const SchedulePage(), ProfilePage()];
   }
 
   List<PersistentBottomNavBarItem> _navBarsItems() {
